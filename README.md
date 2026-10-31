@@ -275,7 +275,7 @@ This project was developed to demonstrate practical knowledge of:
 
 **Rohithash Bethu**
 
-GitHub: [@BethuRohitash](https://github.com/BethuRohitash)
+GitHub: [@BethuRohitash](https://github.com/BethuRohithash)
 
 ---
 
