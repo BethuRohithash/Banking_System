@@ -1,0 +1,49 @@
+server:
+  port: 8082
+spring:
+  application:
+    name: customers
+  datasource:
+    url: jdbc:mysql://localhost:3306/customer_micro
+    driverClassName: com.mysql.cj.jdbc.Driver
+    username: root
+    password: root@123
+  h2:
+    console:
+      enabled: true
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+eureka:
+  client:
+    fetchRegistry: true
+    registerWithEureka: true
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    prefer-ip-address: true
+info:
+  app:
+    name: "customers"
+    description: "CTS Bank Customers Microservice"
+    version: "1.0.0"
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    shutdown:
+      enabled: true
+  info:
+    env:
+      enabled: true
+
+# OpenAPI Configuration
+springdoc:
+  api-docs:
+    path: /v1/api-docs
+  swagger-ui:
+    path: /swagger-ui.html
+  packages-to-scan: com.cognizant.customer.controller
