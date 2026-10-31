@@ -1,0 +1,25 @@
+# Java
+*.class
+*.log
+
+# Maven build output
+**/target/
+
+# Eclipse
+.metadata/
+.settings/
+.classpath
+.project
+.factorypath
+
+# IntelliJ
+.idea/
+*.iml
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Local secrets
+.env
+application-local.yml
